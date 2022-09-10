@@ -86,7 +86,7 @@ console.log(calcFinalPrice(summedPrice, 5, 0.06));
     TEXT ANSWER HERE
 
     seat: what seat the customer is in (location for food delivery)
-    drink: what dring the customer would like to have
+    drink: what drink the customer would like to have
     meal: what meal the customer ordered 
     comfort: the customers level of comfort during their visit
 */
@@ -98,9 +98,9 @@ console.log(calcFinalPrice(summedPrice, 5, 0.06));
 
 //CODE HERE
 
-const customer = {
-  seat: "3",
+let customer = {
+  seat: 3,
   drink: "coke",
   meal: "spaghetti with meat sauce",
-  comfort: "79",
+  comfort: 79,
 };
