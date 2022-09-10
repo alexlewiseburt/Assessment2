@@ -86,8 +86,8 @@ console.log(calcFinalPrice(summedPrice, 5, 0.06));
     TEXT ANSWER HERE
 
     seat: what seat the customer is in (location for food delivery)
-    drink: what drink the customer would like to have
-    meal: what meal the customer ordered 
+    payment: cash or card
+    name: customers name for possible reservation
     comfort: the customers level of comfort during their visit
 */
 
@@ -100,7 +100,7 @@ console.log(calcFinalPrice(summedPrice, 5, 0.06));
 
 let customer = {
   seat: 3,
-  drink: "coke",
-  meal: "spaghetti with meat sauce",
+  name: "jeff",
+  payment: "visa",
   comfort: 79,
 };
