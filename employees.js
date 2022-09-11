@@ -21,6 +21,18 @@
 
 //CODE HERE
 
+class Employee {
+  constructor(name, shifts) {
+    this.name = name;
+    this.shifts = shifts;
+  }
+  getSchedule() {
+    console.log(`${this.name} works on ${this.shifts}`);
+  }
+}
+
+const jeff = new Employee("Jeff", "8 AM Monday");
+jeff.getSchedule();
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
