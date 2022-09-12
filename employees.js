@@ -45,16 +45,7 @@ jeff.getSchedule();
 
 //CODE HERE
 
-class empOne {
-  constructor(name, shifts) {
-    this.name = name;
-    this.shifts = shifts;
-  }
-  getSchedule() {
-    console.log(`${this.name} works on ${this.shifts}`);
-  }
-}
-const Jess = new empOne("Jess", "weekday mornings, weekday afternoons");
+const empOne = new Employee("Jess", "weekday mornings, weekday afternoons");
 
 /*
     Call the `getSchedule` method on the
@@ -63,7 +54,7 @@ const Jess = new empOne("Jess", "weekday mornings, weekday afternoons");
 
 //CODE HERE
 
-Jess.getSchedule();
+empOne.getSchedule();
 
 /*
     Make a copy of the empOne object
@@ -79,9 +70,7 @@ Jess.getSchedule();
 
 //CODE HERE
 
-const empTwo = { ...empOne };
-empTwo.name = "Nick";
-
+const empTwo = { ...empOne, name: "Nick" };
 console.log(empTwo);
 
 //////////////////PROBLEM 2////////////////////
@@ -117,10 +106,10 @@ class Manager extends Employee {
     this.employees = employees;
   }
   getEmployees() {
-    console.log(`${this.name} manges ${this.employees}`);
+    console.log(`${this.name} manages ${this.employees.join(" and ")}`);
   }
   addEmployee(emp) {
-    Employee.push();
+    this.employees.push(emp);
   }
 }
 
@@ -137,24 +126,10 @@ class Manager extends Employee {
 
 //CODE HERE
 
-class manager {
-  constructor(name, shifts, employees) {
-    this.name = name;
-    this.shifts = shifts;
-    this.employees = employees;
-  }
-  getEmployees() {
-    console.log(`${this.name} manges ${this.employees}`);
-  }
-  addEmployee(emp) {
-    Employee.push();
-  }
-}
-const Winston = new manager(
-  "winston",
-  "weekday mornings, weekday afternoons",
-  "ceecee and schmidt"
-);
+const manager = new Manager("Winston", "weekday mornings, weekday afternoons", [
+  "Cece",
+  "Schmidt",
+]);
 
 /*
     Call the `getEmployees` method on the
@@ -162,6 +137,7 @@ const Winston = new manager(
 */
 
 //CODE HERE
+manager.getEmployees();
 
 /*
     Call the `addEmployee` method on the 
@@ -170,6 +146,7 @@ const Winston = new manager(
 */
 
 //CODE HERE
+manager.addEmployee("Coach");
 
 /*
     Call the `getEmployees` method on the
@@ -178,3 +155,4 @@ const Winston = new manager(
 */
 
 //CODE HERE
+manager.getEmployees();
