@@ -86,8 +86,8 @@ console.log(calcFinalPrice(summedPrice, 5, 0.06));
     TEXT ANSWER HERE
 
     seat: what seat the customer is in (location for food delivery)
-    payment: cash or card
     name: customers name for possible reservation
+    payment: type of card, or cash
     comfort: the customers level of comfort during their visit
 */
 

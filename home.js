@@ -22,9 +22,8 @@
 
 //CODE HERE
 
-const greetUser = (username) => `Welcome Back, ${username}`;
-
-// username("Alex");
+const greetUser = (username) => `Welcome back, ${username}`;
+console.log(greetUser("Alex"));
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -50,9 +49,9 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206];
 
 //CODE HERE
 
-const canWeDeliver = (zipcode) => {
+const canWeDeliver = (zipCode) => {
   for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
-    if (deliveryAreaZipCodes[i] === zipcode) {
+    if (deliveryAreaZipCodes[i] === zipCode) {
       console.log("You're in our delivery zone!");
       return;
     }
@@ -61,8 +60,8 @@ const canWeDeliver = (zipcode) => {
   console.log("Sorry, we cant't deliver to that adddress.");
 };
 
-canWeDeliver(85213);
-canWeDeliver(8521300);
+canWeDeliver(84606);
+canWeDeliver(85205);
 
 /* 
     Problem 2 Continued

@@ -33,6 +33,7 @@ class Employee {
 
 const jeff = new Employee("Jeff", "8 AM Monday");
 jeff.getSchedule();
+
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
